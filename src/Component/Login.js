@@ -24,7 +24,6 @@ const Login = (props) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        //console.log(data);
         localStorage.setItem("token", JSON.stringify(data.token));
         setError(data.error);
         if (data.token) {

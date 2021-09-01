@@ -17,7 +17,6 @@ const Home = () => {
     fetch(`https://reqres.in/api/users?page=${page}`)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result.data);
         setDatarr(result.data);
       });
   }, [page]);
